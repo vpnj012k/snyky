@@ -36,7 +36,7 @@ jobs:
       - conftest/install
       - run:
           name: Test Pipfile
-          command: conftest test --input toml --namespace pipfile Pipfile
+          command: conftest test --namespace pipfile Pipfile
       - run:
           name: Test pytest.ini
           command: conftest test --namespace pytest pytest.ini
